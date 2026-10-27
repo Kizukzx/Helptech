@@ -1,0 +1,1 @@
+<?php require_once '../config/auth.php'; exigirPerfil(['Administrador','Técnico','Trabalhador']); require_once '../config/conexao.php';$id=(int)($_GET['id']??0);$st=$conn->prepare('DELETE FROM ordens_servico WHERE id=?');$st->bind_param('i',$id);$st->execute();header('Location: listar.php');exit;?>

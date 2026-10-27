@@ -1,0 +1,1 @@
+<?php require_once __DIR__.'/config/auth.php'; exigirPerfil(['Administrador','Técnico','Trabalhador']); ?> $_GET['id']=$_GET['id']??0; include 'cadastrar.php'; ?>
